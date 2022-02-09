@@ -1,0 +1,174 @@
+* {
+    box-sizing: border-box;
+}
+/* buttons, inputs, textareas */
+button, input, textarea {
+    border-style: none;
+    color: inherit;
+    resize: none;
+    background-color: transparent;
+}
+input::placeholder {
+    font-family: inherit;
+    color: inherit;
+}
+
+textarea::placeholder {
+    font-family: inherit;
+    color: inherit;
+   
+}
+/* elements */
+
+.list-reset {
+    margin: 0; /* в преимуществах нужен марджин 0 для карточек*/
+    padding: 0;
+    list-style-type: none;
+} 
+.input-reset, .button-reset {
+    padding: 0;
+    border: none;
+    font-family: inherit;
+    font-size: inherit;
+}
+/* links */
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+a:active {
+    text-decoration: none;   
+}
+a:focus {
+    text-decoration: none;   
+}
+body {
+    font: 400 14px Gotham Pro;
+    background-color: lightgray;
+    color: rgba(13, 13, 13, 1);
+}
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.popup {
+    display: flex;
+    width: 750px;
+    min-height: 450px;
+    background-color: #fff;
+    border-radius: 20px;
+}
+.popup__left {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 310px;
+    background-color: rgba(239, 239, 239, 1);
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+
+}
+.popup__open-book {
+    position: absolute;
+    left: -50px;
+    top: 46px;
+}
+.popup__arrow {
+    position: absolute;
+    left: 229px;
+    top: 323.5px;
+}
+.popup__left::after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 200px;
+    height: 100px;
+    left: 48px;
+    top: 243px;
+    background: #0D0D0D;
+    filter: blur(138px);
+    transform: rotate(-25.13deg);
+}
+.popup__left--text {
+    margin: 0;
+    width: 95%;
+    border-radius: 20px;
+    font-weight: 900;
+    font-size: 92px;
+    text-align: end;
+    word-break: break-word;
+    line-height: 88px;
+    color: rgba(0, 0, 0, .5);
+    mix-blend-mode: soft-light;
+}
+.popup__right {
+    display: flex;
+    flex-flow: column nowrap;
+    padding: 26px 55px 26px 61px;
+    max-width: 440px;
+    text-align: center;
+}
+.popup__heading {
+    margin: 0;
+    margin-bottom: 48px;
+    font-weight: 900;
+    font-size: 24px;
+
+}
+.popup__right--text {
+    margin: 0;
+    margin-bottom: 15px;
+}
+.popup__span {
+    font-size: 12px;
+}
+.popup__strong {
+    display: inline-block;
+    margin-bottom: 5px;
+    font-size: 24px;
+    font-weight: 900;
+    line-height: 24px;
+}
+.popup__text-block {
+    margin-bottom: 29px;
+}
+.popup__form {
+    text-align: start;
+}
+.popup__input {
+    width: 100%;
+    min-height: 50px;
+    border: 2px solid #F3CE00;
+    border-radius: 4px;
+}
+.popup__label {
+    display: block;
+    margin-bottom: 8px;
+    text-align: start;
+    font-size: 12px;
+}
+.popup__input {
+    margin-bottom: 15px;
+    padding-left: 15px;
+}
+.popup__input::placeholder {
+    font-weight: 700;
+    font-size: 14px;
+    color: rgba(13, 13, 13, 1);
+}
+.popup__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 50px;
+    background: linear-gradient(92.64deg, #FF5621 29.24%, #F21313 83.67%);
+    color: #fff;
+    font-weight: 900;
+    font-size: 16px;
+}
